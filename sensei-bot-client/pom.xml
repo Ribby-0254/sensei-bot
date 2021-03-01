@@ -21,25 +21,11 @@
 		<jda-utilities.version>3.0.5</jda-utilities.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>bintray</name>
-			<url>http://jcenter.bintray.com</url>
-		</repository>
-		<repository>
-			<id>jcenter</id>
-			<name>jcenter-bintray</name>
-			<url>https://jcenter.bintray.com</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>net.dv8tion</groupId>
 			<artifactId>JDA</artifactId>
 			<version>${jda.version}</version>
-			<type>pom</type>
 			<exclusions>
 				<exclusion>
 					<groupId>club.minnced</groupId>
@@ -54,6 +40,14 @@
 			<type>pom</type>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>bintray</name>
+			<url>http://jcenter.bintray.com</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
