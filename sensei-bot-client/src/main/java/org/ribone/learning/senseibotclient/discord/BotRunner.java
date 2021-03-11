@@ -5,18 +5,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
-public class DiscordBotRunner implements CommandLineRunner {
+// Sole purpose: To startup the discord bot
 
-    private final DiscordBotBoot bot;
+@Component
+public class BotRunner implements CommandLineRunner {
+
+    private final BotBootUp bot;
 
     @Autowired
-    public DiscordBotRunner(DiscordBotBoot bot){
+    public BotRunner(BotBootUp bot){
         this.bot = bot;
     }
 
     @Override
     public void run(String ...args){
-
+        // connect bot
+        bot.start();
     }
 }

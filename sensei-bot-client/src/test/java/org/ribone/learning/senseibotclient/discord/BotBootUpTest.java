@@ -4,15 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class DiscordBotBootTest {
-
-    @DisplayName("Test CommandClient builds successfully")
-    @Test
-    void commandClientBuildSuccessTest(){
-        Assertions.assertDoesNotThrow(() -> {
-            throw new Exception();
-        });
-    }
+class BotBootUpTest {
 
     @DisplayName("Test JDA builds successfully")
     @Test

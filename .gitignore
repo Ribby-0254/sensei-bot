@@ -1,3 +1,7 @@
+# custom stuff
+*.properties
+!bot-placeholder.properties
+
 # Operating System Files
 
 *.DS_Store
@@ -32,9 +36,6 @@ build/
 .vscode/
 
 # Spring Bootstrap artifacts
-
 dependency-reduced-pom.xml
-
 mem*.db
-
 README.html
